@@ -1,6 +1,5 @@
 #### INSTALLING PACKAGES ####
 
-
   install.packages('tm',repos='http://cran.us.r-project.org')
   install.packages('twitteR',repos='http://cran.us.r-project.org')
   install.packages('wordcloud',repos='http://cran.us.r-project.org')
@@ -10,8 +9,8 @@
   install.packages("SnowballC")
 
 #### INSPECTING THE DOCUMENT #####
-#converting the text file into a corpus and inspect a few lines.
 
+    #converting the text file into a corpus and inspect a few lines.
     library(SnowballC)
     library("tm")
     text <- readLines("D:\\desktop\\word cloud.txt")
@@ -19,8 +18,7 @@
     length(docs)
     
     inspect(docs[10:15])
-    
-    
+
 ####DATA CLEANING ####
     
     #creating a function 'tospace' to replace specific characters with empty string
